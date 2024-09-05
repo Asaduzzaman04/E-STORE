@@ -11,6 +11,9 @@ export default {
         't-body': "#B0B3B8",
         'button': "#3A3F47 ",
       },
+      backgroundImage : {
+        'hero' : ' linear-gradient(to right top, #5865f2, #6586fb, #7ea5ff, #9fc2ff, #c7deff);'
+      }
     },
     fontFamily: {
       poppins: "poppins, system-ui",

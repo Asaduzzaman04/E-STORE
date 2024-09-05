@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 @layer utilities {
-    
+    ::selection{
+        background-color: #6798b9;
+    }
     ::-webkit-scrollbar {
         width: 8px;
     }
