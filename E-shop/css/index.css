@@ -2,4 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
 
+
+    /* For the handle (scrollbar thumb) */
+    ::-webkit-scrollbar-thumb {
+        background: #5865F2;
+        border-radius: 10px;
+    }
+
+    /* For the handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #6798b9;
+    }
+
+    /* For the corner between horizontal and vertical scrollbar */
+    ::-webkit-scrollbar-corner {
+        background: #f1f1f1;
+    }
+
+}
+@layer components{
+    .nav_btn{
+        @apply  hover:text-accent rounded-md relative before:absolute before:transition-all before:duration-300 before:ease-linear before:-z-10  before:bottom-0 before:left-0 before:h-full before:w-0 before:hover:w-full before:border-b-2 before:border-[#5865F2]
+    }
+    /* fixed-navbar-class */
+    .top{
+        @apply top-0
+    }
+}
