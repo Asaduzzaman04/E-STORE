@@ -29,7 +29,6 @@ export default {
       },
       animation: {
         linier: "linier 12s ease-in forwards",
-        Bounces : "bounce 2s ease-in forwards"
       },
     },
     fontFamily: {

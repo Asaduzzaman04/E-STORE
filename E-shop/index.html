@@ -19,64 +19,91 @@
   <title>E-STORE</title>
 </head>
 
-<body class=" font-poppins bg-primary  font-medium h-[200vh] ">
+<body class=" overflow-x-hidden font-poppins bg-primary  font-medium  ">
   <!-- -----header-start----- -->
-  <header class="w-full">
+  <header class="w-full ">
     <!-- ------offer-section-start------ -->
     <section
-    class="bg-Secondary text-Headings py-4 flex flex-col gap-5 md:flex-row md:justify-around justify-center items-center">
-    <div class="offer_text">
-      <h2
-      class=" font-light md:font-semibold animate-bounce px-1 md:px-3 z-10 relative  before:transition-all duration-500 ease-linear
+      class="bg-Secondary text-Headings py-4 flex flex-col gap-5 md:flex-row md:justify-around justify-center items-center">
+      <div class="offer_text">
+        <h2
+          class=" font-light md:font-semibold animate-bounce px-1 md:px-3 z-10 relative  before:transition-all duration-500 ease-linear
       before:absolute before:contents-[''] before:top-[50%] before:left-[50%] before:translate-x-[-50%] before:translate-y-[-50%]  before:w-0 hover:before:w-full before:h-full before:bg-primary before:rounded-2xl before:-z-10 hover:text-Secondary">
-      Free shipping, 30-day return of refund gurantee.</h2>
-    </div>
-    <div class="sign_in_up text-accent grid grid-cols-2 gap-5  text-xl  ">
-      <button class="capitalize"><a href="#">sign in</a></button>
-      <button class="capitalize"><a href="#">sign up</a></button>
-    </div>
-  </section>
-  <!-- ------offer-section-end------ -->
-   <!-- -----navbar-start----- -->
-    <section class=" nav-fixed   fixed w-full bg-[#F1F5F9]   flex flex-col gap-3 justify-center items-center md:flex-row md:justify-around text-lg md:text-xl uppercase py-3 ">
-      <div class="business_logo">
-          <img class=" md:w-40" src="./assets/E-store-logo.png" alt="E-STORE-LOGO">
+          Free shipping, 30-day return of refund gurantee.</h2>
       </div>
-      <div class="nav-links flex justify-center items-center  gap-2 md:gap-6">
-      <ul class=" z-20 flex justify-center items-center gap-3 md:gap-6 font-normal md:font-medium">
-        <li class="nav_btn"><a href="#home">home</a></li>
-        <li class="nav_btn"><a href="#about">about</a></li>
-        <li class="nav_btn"><a href="#products">products</a></li>
-        <li class="nav_btn"><a href="#contact">contact</a></li>
-      </ul>
-      <div class="cart ">
-        <a href="addToCart.html" class=" text-[#F1F5F9] bg-Secondary px-2 py-1.5 rounded-lg md:px-3 md:py-1"><i class="ri-shopping-cart-2-fill text-xl md:text-2xl  z-10 "> 0</i></a>
-      </div>
+      <div class="sign_in_up text-accent grid grid-cols-2 gap-5  text-xl  ">
+        <button class="capitalize"><a href="#">sign in</a></button>
+        <button class="capitalize"><a href="#">sign up</a></button>
       </div>
     </section>
-   <!-- -----navbar-end----- -->
+    <!-- ------offer-section-end------ -->
+    <!-- -----navbar-start----- -->
+    <section
+      class="z-50  nav-fixed   fixed w-full bg-[#F1F5F9]   flex flex-col gap-3 justify-center items-center md:flex-row md:justify-around text-lg md:text-xl uppercase py-3 ">
+      <div class="business_logo">
+        <img class=" md:w-40" src="./assets/E-store-logo.png" alt="E-STORE-LOGO">
+      </div>
+      <div class="nav-links flex justify-center items-center  gap-2 md:gap-6">
+        <ul class=" z-20 flex justify-center items-center gap-3 md:gap-6 font-normal md:font-medium">
+          <li class="nav_btn"><a href="#home">home</a></li>
+          <li class="nav_btn"><a href="#about">about</a></li>
+          <li class="nav_btn"><a href="#products">products</a></li>
+          <li class="nav_btn"><a href="#contact">contact</a></li>
+        </ul>
+        <div class="cart ">
+          <a href="addToCart.html" class=" text-[#F1F5F9] bg-Secondary px-2 py-1.5 rounded-lg md:px-3 md:py-1"><i
+              class="ri-shopping-cart-2-fill text-xl md:text-2xl  z-10 "> 0</i></a>
+        </div>
+      </div>
+    </section>
+    <!-- -----navbar-end----- -->
   </header>
   <!-- -----header-end----- -->
 
   <!-- -----hero-section-start----- -->
-  <main id="home" class="   p-[5%] md:px-[5%] md:py-[10%]  mt-[105px] md:mt-[70px] hero-section flex  flex-col-reverse justify-between items-center lg:flex-row gap-10 bg-hero ">
+  <main id="home"
+    class="   p-[5%] md:px-[5%] md:py-[10%]  mt-[105px] md:mt-[70px] hero-section flex  flex-col-reverse justify-between items-center lg:flex-row gap-10 bg-hero ">
 
-    <section class="intro-hero  py-6  lg:basis-[60%] xl:basis-[45%]">
+    <section class=" overflow-y-hidden intro-hero  py-6  lg:basis-[60%] xl:basis-[45%]">
       <div class="intro-text flex flex-col justify-center items-start md:flex gap-6">
-        <h2 class=" animate-loading ">Explore the Latest in Tech Industries</h2>
-          <h1 class="text-[#003B99] text-4xl font-bold leading-relaxed lg:text-5xl lg:leading-relaxed xl:text-6xl xl:leading-relaxed">Your Destination for Cutting-Edge Gadgets!</h1>
-          <p class=" text-primary  tracking-wide leading-relaxed ">Welcome to E-Store, your ultimate destination for cutting-edge gadgets! Explore the latest in tech innovation and style with us. Shop now and discover a world of possibilities!</p>
-          <button id="products" class="w-fit border-Secondary border-[3px] px-4 py-1 rounded-md bg-Secondary text-primary hover:bg-primary hover:text-Secondary transition-all duration-300 shadow-xl">Explore Our Products</button>
+        <h2 class="hero-ex  animate-loading ">Explore the Latest in Tech Industries</h2>
+        <h1
+          class="hero-title text-[#003B99] text-4xl font-bold leading-relaxed lg:text-[3rem] xl:text-[3.5rem] xl:leading-relaxed ">
+          Your Destination for Cutting-Edge Gadgets!</h1>
+        <p class="hero-des text-primary  tracking-wide leading-relaxed ">Welcome to E-Store, your ultimate destination
+          for cutting-edge gadgets! Explore the latest in tech innovation and style with us. Shop now and discover a
+          world of possibilities!</p>
+        <div class="products">
+          <button id="products"
+            class=" w-fit border-Secondary border-[3px] px-4 py-1 rounded-md bg-Secondary text-primary hover:bg-primary hover:text-Secondary transition-all duration-300 shadow-xl">Explore
+            Our Products</button>
+        </div>
       </div>
     </section>
     <section class="image  lg:basis-[45%] xl:basis-[55%] ">
       <figure class="">
-        <img src="./assets/heroSection.svg" alt="Hero image" >
+        <img src="./assets/heroSection.svg" alt="Hero image">
       </figure>
     </section>
   </main>
   <!-- -----hero-section-end----- -->
 
+  <!-- -----offer-devices-seciton-start----- -->
+  <main id="offer-main" class=" rounded-md mt-20 mb-10 mx-2 md:mx-10  grid grid-cols-1 justify-center items-center gap-4 md:grid-cols-3 bg-[#f6f8fc]">
+
+
+  </main>
+  <!-- -----offer-devices-seciton-end----- -->
+
+
+  <!-- -----gsap-cnd----- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- -----gsap-scroll-trigger-cnd------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- -----script-file----- -->
   <script type="module" src="./main.js"></script>
 </body>
