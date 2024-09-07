@@ -2,17 +2,20 @@
     "yearOffer" : "new year sale",
     "offerPercent" : "get and extra 50% off",
     "shopBtn" : "Show now ",
-    "productImg" : "./assets/laptop-CT_LaLd8.png "
+    "productImg" : "./assets/laptop-CT_LaLd8.png ",
+    "class" : "childOne"
 },
 {
     "yearOffer" : "new year sale",
     "offerPercent" : "40% discount on headphone",
     "shopBtn" : "Show now ",
-    "productImg" : "./assets/headphoneEcom-Cx8W04La.png "
+    "productImg" : "./assets/headphoneEcom-Cx8W04La.png ",
+    "class" : "childTwo"
 },
 {
     "yearOffer" : "new year sale",
     "offerPercent" : "get and extra 50% off",
     "shopBtn" : "Show now ",
-    "productImg" : "./assets/mobiles-BWFz1yVQ.png"
+    "productImg" : "./assets/mobiles-BWFz1yVQ.png",
+    "class" : "childThree"
 }]
