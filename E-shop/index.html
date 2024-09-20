@@ -19,7 +19,7 @@
   <title>E-STORE</title>
 </head>
 
-<body class=" overflow-x-hidden font-poppins bg-primary  font-medium h-[300vh]  ">
+<body class=" overflow-x-hidden font-poppins bg-primary  font-medium   ">
   <!-- -----header-start----- -->
   <header class="w-full ">
     <!-- ------offer-section-start------ -->
@@ -45,13 +45,13 @@
       </div>
       <div class="nav-links flex justify-center items-center  gap-2 md:gap-6">
         <ul class=" z-20 flex justify-center items-center gap-3 md:gap-6 font-normal md:font-medium">
-          <li class="nav_btn"><a href="#home">home</a></li>
-          <li class="nav_btn"><a href="#about">about</a></li>
-          <li class="nav_btn"><a href="#products">products</a></li>
-          <li class="nav_btn"><a href="#contact">contact</a></li>
+          <li class="nav_btn active:scale-90 transition-all duration-300 ease-linear"><a href="#home">home</a></li>
+          <li class="nav_btn active:scale-90 transition-all duration-300 ease-linear"><a href="#about">about</a></li>
+          <li class="nav_btn active:scale-90 transition-all duration-300 ease-linear"><a href="#products">products</a></li>
+          <li class="nav_btn active:scale-90 transition-all duration-300 ease-linear"><a href="#contact">contact</a></li>
         </ul>
-        <div class="cart ">
-          <a href="addToCart.html" class=" text-[#F1F5F9] bg-Secondary px-2 py-1.5 rounded-lg md:px-3 md:py-1"><i
+        <div class="cart active:scale-90  transition-all duration-300 ease-linear">
+          <a href="addToCart.html" class=" text-[#F1F5F9] bg-Secondary px-2 py-1.5 rounded-lg md:px-3 md:py-1 hover:scale-95"><i
               class="ri-shopping-cart-2-fill text-xl md:text-2xl  z-10 "> 0</i></a>
         </div>
       </div>
@@ -75,8 +75,9 @@
           world of possibilities!</p>
         <div class="products">
           <button id="products"
-            class=" w-fit border-Secondary border-[3px] px-4 py-1 rounded-md bg-Secondary text-primary hover:bg-primary hover:text-Secondary transition-all duration-300 shadow-xl">Explore
+            class=" w-fit active:scale-95 border-Secondary border-[3px] px-4 py-1 rounded-md bg-Secondary text-primary hover:bg-primary hover:text-Secondary transition-all duration-300 shadow-xl">Explore
             Our Products</button>
+
         </div>
       </div>
     </section>
@@ -89,13 +90,22 @@
   <!-- -----hero-section-end----- -->
 
   <!-- -----offer-devices-seciton-start----- -->
-  <main id="offer-main" class=" overflow-hidden rounded-md mt-20 mb-10 mx-2 md:mx-10  grid grid-cols-1 justify-center items-center gap-4 md:grid-cols-3 bg-[#f6f8fc]">
+  <main id="offer-main" class=" overflow-hidden rounded-md mt-20 mb-10 mx-2 md:mx-16  grid grid-cols-1 justify-center items-center gap-4 lg:grid-cols-3 bg-[#f6f8fc]">
 
 
   </main>
   <!-- -----offer-devices-seciton-end----- -->
 
+<!-- -----facility-section-start----- -->
+  <div id="facility-sec" class=" overflow-hidden rounded-lg mt-14 mb-10 mx-2 md:mx-16  grid grid-cols-2 justify-center items-center gap-4 lg:grid-cols-4 bg-[#f6f8fc] shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
 
+  </div>
+
+<!-- -----facility-section-end----- -->
+
+  <!-- -------Store-section-start----- -->
+   
+  <!-- -------Store-section-end----- -->
   <!-- -----gsap-cnd----- -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
     integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="

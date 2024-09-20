@@ -49,7 +49,7 @@ gsap.from(".products", {
 // -----offer-section------
 const offerMain = document.getElementById("offer-main");
 
-const url = "http://localhost:5173/Data.json";
+const url = "./Data.json";
 
 const offerData = async () => {
   const data = await fetch(url);
@@ -114,3 +114,27 @@ const offerData = async () => {
   });
 };
 offerData();
+
+// ------Facility-section----- \\
+const fecilitysec = document.getElementById("facility-sec")
+
+const basef = './Facility.json'
+
+const Fecility = async () => {
+  const res = await fetch(basef)
+  const data = await res.json()
+
+ 
+  for(let item of data){
+const section = document.createElement("section")
+fecilitysec.appendChild(section)
+section.innerHTML = `<section class="px-[6%] py-5 md:py-10 my-4 border-r-2 border-gray-200  flex justify-start md:justify-center items-center gap-6 ">
+    <div class='text-4xl text-accent '> ${item.icon}</div>
+    <div> 
+      <p class='text-xl leading-loose capitalize' >${item.title}</p>
+      <p class='font-normal'>${item.details}</p>
+    </div>
+</section>`
+  }
+}
+Fecility()

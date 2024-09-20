@@ -1,0 +1,22 @@
+[
+    {
+        "icon" : "<i class='ri-ship-2-fill'></i>",
+        "title" : "worldwide shipping",
+        "details" : "order above $100"
+    },
+    {
+        "icon" : "<i class='ri-loop-left-line'></i>",
+        "title" : "Easy 30 Day Returns",
+        "details" : "Back Returns in 7 Days"
+    },
+    {
+        "icon" : "<i class='ri-money-dollar-circle-line'></i>",
+        "title" : "money back guarantee",
+        "details" : "guarantee with in 30-Days"
+    },
+    {
+        "icon" : "<i class='ri-customer-service-2-line'></i>",
+        "title" : "Easy Online Support",
+        "details" : "24/7 Any time support"
+    }
+]
