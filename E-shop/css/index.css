@@ -26,7 +26,10 @@
     ::-webkit-scrollbar-corner {
         background: #f1f1f1;
     }
- 
+    
+ html{
+    scroll-behavior: smooth;
+ }
 
 
 }
