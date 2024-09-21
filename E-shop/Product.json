@@ -1,6 +1,7 @@
 [
     {
       "id": "one",
+      "elid": "Laptop",
       "name": "Laptop",
       "category": "Computers",
       "brand": "ExampleBrand",
@@ -11,6 +12,7 @@
     },
     {
       "id": "two",
+      "elid": "Smartphone",
       "name": "Smartphone",
       "category": "Mobiles",
       "brand": "TechGadget",
@@ -21,6 +23,7 @@
     },
     {
       "id": "three",
+      "elid": "Headphones",
       "name": "Wireless Headphones",
       "category": "Audio",
       "brand": "SoundBeats",
@@ -31,6 +34,7 @@
     },
     {
       "id": "four",
+      "elid": "Watches",
       "name": "Watches",
       "category": "Wearables",
       "brand": "FitTech",
@@ -41,6 +45,7 @@
     },
     {
       "id": "five",
+      "elid": "Speakers",
       "name": "Speakers",
       "category": "Audio",
       "brand": "SoundBeats",
@@ -51,6 +56,7 @@
     },
     {
       "id": "six",
+      "elid": "Television",
       "name": "Television",
       "category": "Video",
       "brand": "Samsung",
@@ -61,6 +67,7 @@
     },
     {
       "id": "seven",
+      "elid": "Watches-sev",
       "name": "Watches",
       "category": "Wearables",
       "brand": "FitTech",
@@ -71,6 +78,7 @@
     },
     {
       "id": "eight",
+      "elid": "Laptop-ed",
       "name": "Laptop",
       "category": "Computers",
       "brand": "ExampleBrand",

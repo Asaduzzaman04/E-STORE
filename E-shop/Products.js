@@ -5,8 +5,10 @@ const productUrl = "./Product.json";
 const products = async () => {
   const res = await fetch(productUrl);
   const prodData = await res.json();
+
   prodData.forEach((element) => {
     const section = document.createElement("section");
+    section.classList.add(`${element.elid}`)
     product.appendChild(section);
     section.innerHTML = `<div class='bg-[#f6f8fc] flex flex-col justify-center items-center transition-all duration-300 ease-linear hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] hover:scale-105  gap-5  rounded-lg px-[7%] py-[5%] group '>
       <section class=" flex flex-col justify-center items-start gap-5">
@@ -17,7 +19,9 @@ const products = async () => {
         </div>
 
         <div class=' flex justify-center items-center  overflow-hidden'>
-        <img class='w-[90%] group-hover:scale-110 transition-all duration-300 ease-linear' src=${element.image} alt=${element.name}>
+        <img class='w-[90%] group-hover:scale-110 transition-all duration-300 ease-linear' src=${
+          element.image
+        } alt=${element.name}>
         </div>
     
 
@@ -61,10 +65,31 @@ const products = async () => {
 
     </section>
      <div>
-         <button 
+         <button id=${element.id}
             class=" w-fit active:scale-95 border-Secondary border-[3px] px-4 py-1 rounded-md bg-Secondary text-white hover:bg-white hover:text-Secondary transition-all duration-300 shadow-xl"><i class="ri-shopping-cart-2-fill"></i> add to cart</button>
         </div>
     </div>`;
+
+    // =====gsap-Animation-on products===== \\
+
+    gsap.from(`.${element.elid}`, {
+      scrollTrigger: {
+        trigger: `.${element.elid}`,
+        scroller: "body",
+        scrub: 3,
+        start: "top 95%",
+        end: "top 40%"
+      },
+      duration: 0.7,
+      y: 60,
+      opacity: 0,
+    });
+
+    // =====card-button-event-created=====\\
+    const card = document.getElementById(`${element.id}`);
+    card.addEventListener("click", () => {
+      console.log(`${element.id} number card clicked`);
+    });
   });
 };
 products();

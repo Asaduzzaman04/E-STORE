@@ -74,42 +74,42 @@ const offerData = async () => {
   }
   gsap.from(".childOne", {
     scrollTrigger: {
-      trigger: "childOne",
+      trigger: ".childOne",
       scroller: "body",
       scrub: 3,
-      start: "top 25%",
-      end: "top -60%",
+      start : "top 95%",
+      end: "top 60%",
+      
     },
     duration: 1,
-    y: 800,
+    y: 30,
     opacity: 0,
   });
 
   gsap.from(".childTwo", {
     scrollTrigger: {
-      trigger: "childTwo",
+      trigger: ".childTwo",
       scroller: "body",
       scrub: 3,
-
-      start: "top 25%",
-      end: "top -60%",
+      start : "top 95%",
+      end: "top 60%",
+    
     },
     duration: 1.5,
-    y: 1500,
+    y: 50,
     opacity: 0,
   });
 
   gsap.from(".childThree", {
     scrollTrigger: {
-      trigger: "childThree",
+      trigger: ".childThree",
       scroller: "body",
       scrub: 3,
-
-      start: "top 25%",
-      end: "top -60%",
+      start : "top 95%",
+      end: "top 60%",
     },
     duration: 2,
-    y: 2300,
+    y: 80,
     opacity: 0,
   });
 };
