@@ -8,7 +8,10 @@
       "price": 9099.99,
       "stock": 50,
       "description": "Powerful laptop with a quad-core i5 processor, 8GB RAM, 256GB SSD, and a 14-inch FHD display.",
-      "image": "./assets/lapi.png"
+      "image": "./assets/lapi.png",
+      "increment" : "incrementOne",
+      "decrement" : "decrementOne",
+      "qualityValue" : "firstval"
     },
     {
       "id": "two",
@@ -19,7 +22,10 @@
       "price": 8699.99,
       "stock": 100,
       "image": "./assets/iphone.png",
-      "description": "Feature-rich smartphone with a 6.2-inch screen, 12MP dual camera, 128GB storage, and a 4000mAh battery."
+      "description": "Feature-rich smartphone with a 6.2-inch screen, 12MP dual camera, 128GB storage, and a 4000mAh battery.",
+      "increment" : "incrementTwo",
+      "decrement" : "decrementTwo",
+      "qualityValue" : "secondVal"
     },
     {
       "id": "three",
@@ -30,7 +36,10 @@
       "price": 3500.99,
       "stock": 30,
       "image": "./assets/headphone-cart.png",
-      "description": "High-quality wireless headphones with over-ear design, 20 hours of battery life, and a sleek black color."
+      "description": "High-quality wireless headphones with over-ear design, 20 hours of battery life, and a sleek black color.",
+      "increment" : "incrementThree",
+      "decrement" : "decrementThree",
+      "qualityValue" : "thirdVal"
     },
     {
       "id": "four",
@@ -39,9 +48,12 @@
       "category": "Wearables",
       "brand": "FitTech",
       "price": 6799.99,
-      "stock": 20,
+      "stock": 24,
       "image": "./assets/watch.png",
-      "description": "Smartwatch with a 1.3-inch AMOLED display, water-resistant design, fitness tracking features, and a stylish silver color."
+      "description": "Smartwatch with a 1.3-inch AMOLED display, water-resistant design, fitness tracking features, and a stylish silver color.",
+      "increment" : "incrementFour",
+      "decrement" : "decrementFour",
+      "qualityValue" : "FourthVal"
     },
     {
       "id": "five",
@@ -50,9 +62,12 @@
       "category": "Audio",
       "brand": "SoundBeats",
       "price": 8599.99,
-      "stock": 30,
+      "stock": 34,
       "image": "./assets/speakers.png",
-      "description": "High-quality wireless headphones with over-ear design, 20 hours of battery life, and a sleek black color."
+      "description": "High-quality wireless headphones with over-ear design, 20 hours of battery life, and a sleek black color.",
+      "increment" : "incrementFive",
+      "decrement" : "decrementFive",
+      "qualityValue" : "fifthVal"
     },
     {
       "id": "six",
@@ -61,9 +76,12 @@
       "category": "Video",
       "brand": "Samsung",
       "price": 7000.99,
-      "stock": 20,
+      "stock": 28,
       "image": "./assets/tv.png",
-      "description": "Smartwatch with a 1.3-inch AMOLED display, water-resistant design, fitness tracking features, and a stylish silver color."
+      "description": "Smartwatch with a 1.3-inch AMOLED display, water-resistant design, fitness tracking features, and a stylish silver color.",
+      "increment" : "incrementSix",
+      "decrement" : "decrementSix",
+      "qualityValue" : "sixthVal"
     },
     {
       "id": "seven",
@@ -72,9 +90,12 @@
       "category": "Wearables",
       "brand": "FitTech",
       "price": 8799.99,
-      "stock": 20,
+      "stock": 10,
       "image": "./assets/watch.png",
-      "description": "Smartwatch with a 1.3-inch AMOLED display, water-resistant design, fitness tracking features, and a stylish silver color."
+      "description": "Smartwatch with a 1.3-inch AMOLED display, water-resistant design, fitness tracking features, and a stylish silver color.",
+      "increment" : "incrementSeven",
+      "decrement" : "decrementSeven",
+      "qualityValue" : "sevenVal" 
     },
     {
       "id": "eight",
@@ -83,9 +104,12 @@
       "category": "Computers",
       "brand": "ExampleBrand",
       "price": 9999.99,
-      "stock": 50,
+      "stock": 54,
       "description": "Powerful laptop with a quad-core i5 processor, 8GB RAM, 256GB SSD, and a 14-inch FHD display.",
-      "image": "./assets/lapi.png"
+      "image": "./assets/lapi.png",
+      "increment" : "incrementEight",
+      "decrement" : "decrementEight",
+      "qualityValue" : "eightVal"
     }
     
   ]

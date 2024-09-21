@@ -1,3 +1,5 @@
+import { addToCard } from "./addToCard";
+
 const product = document.querySelector(".store");
 
 const productUrl = "./Product.json";
@@ -14,7 +16,7 @@ const products = async () => {
       <section class=" flex flex-col justify-center items-start gap-5">
 
 
-        <div class=" bg-accent text-white font-light w-fit px-2.5 py-1.5 rounded-3xl">
+        <div class=" bg-accent text-white font-light w-fit px-2.5 py-1.5 rounded-3xl group-hover:shadow-2xl shadow-blue-500/20 group-hover:scale-105 transition-all duration-300 ease-linear">
         <span>${element.category}</span>
         </div>
 
@@ -49,7 +51,7 @@ const products = async () => {
 
 
         <div class="font-normal">
-                <p>Total Stocks Available: ${element.stock}</p>
+                <p >Total Stocks Available: <span id=${element.stock} > ${element.stock}</span> </p>
         </div>
 
 
@@ -57,9 +59,9 @@ const products = async () => {
             <p>Quantity(Pieces) :</p>
             
             <div class="flex  border-2 border-black rounded-md gap-5 text-xl px-2">
-            <button class='border-r-2 border-black pr-2'> + </button>
-            <p> 0</p>
-            <button class='border-l-2 border-black pl-2'> - </button>
+            <button id=${element.increment} class='border-r-2 border-black pr-2'> + </button>
+            <p id=${element.qualityValue}>0</p>
+            <button id=${element.decrement} class='border-l-2 border-black pl-2'> - </button>
             </div>
         </div>
 
@@ -69,6 +71,32 @@ const products = async () => {
             class=" w-fit active:scale-95 border-Secondary border-[3px] px-4 py-1 rounded-md bg-Secondary text-white hover:bg-white hover:text-Secondary transition-all duration-300 shadow-xl"><i class="ri-shopping-cart-2-fill"></i> add to cart</button>
         </div>
     </div>`;
+
+    // =====products-quantity=====\\
+
+    let number = 0
+    let decStock = 0
+    const quantity = document.getElementById(`${element.qualityValue}`)
+    const inc = document.getElementById(`${element.increment}`)
+    const dec = document.getElementById(`${element.decrement}`)
+    const stock = document.getElementById(`${element.stock}`)
+        
+        inc.addEventListener("click", () =>{
+         if(number < `${element.stock}`){
+          number += 1
+          quantity.textContent = number
+          stock.textContent = Number(`${element.stock}`) - number
+         }
+        })
+
+        dec.addEventListener("click", () => {
+         if(number > 0){
+          number -= 1
+          quantity.textContent = number
+          
+         }
+        })
+  
 
     // =====gsap-Animation-on products===== \\
 
@@ -85,10 +113,11 @@ const products = async () => {
       opacity: 0,
     });
 
+
     // =====card-button-event-created=====\\
     const card = document.getElementById(`${element.id}`);
     card.addEventListener("click", () => {
-      console.log(`${element.id} number card clicked`);
+     addToCard(element , card)
     });
   });
 };
