@@ -75,7 +75,7 @@ const products = async () => {
     // =====products-quantity=====\\
 
     let number = 0
-    let decStock = 0
+  
     const quantity = document.getElementById(`${element.qualityValue}`)
     const inc = document.getElementById(`${element.increment}`)
     const dec = document.getElementById(`${element.decrement}`)
@@ -98,7 +98,7 @@ const products = async () => {
         })
   
 
-    // =====gsap-Animation-on products===== \\
+   // =====gsap-Animation-on products===== \\
 
     gsap.from(`.${element.elid}`, {
       scrollTrigger: {
@@ -116,8 +116,15 @@ const products = async () => {
 
     // =====card-button-event-created=====\\
     const card = document.getElementById(`${element.id}`);
+    
+  
     card.addEventListener("click", () => {
-     addToCard(element , card)
+      if(number === 0){
+        confirm(`Add Quantity of ${element.name}`)
+      }else{
+        addToCard(element,number)
+        
+      }
     });
   });
 };
