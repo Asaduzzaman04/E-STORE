@@ -53,7 +53,7 @@ gsap.from(".products", {
 // -----offer-section------
 const offerMain = document.getElementById("offer-main");
 
-const url = "./public/Data.json";
+const url = "./Data.json";
 
 const offerData = async () => {
   const data = await fetch(url);

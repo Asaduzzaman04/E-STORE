@@ -2,7 +2,7 @@ import { addToCard } from "./addToCard";
 
 const product = document.querySelector(".store");
 
-const productUrl = "./public/Product.json";
+const productUrl = "./Product.json";
 
 const products = async () => {
   const res = await fetch(productUrl);
@@ -21,9 +21,7 @@ const products = async () => {
         </div>
 
         <div class=' flex justify-center items-center  overflow-hidden'>
-        <img class='w-[90%] group-hover:scale-110 transition-all duration-300 ease-linear' src=${
-          element.image
-        } alt=${element.name}>
+        <img class='w-[90%] group-hover:scale-110 transition-all duration-300 ease-linear' src=${element.image} alt=${element.name}>
         </div>
     
 

@@ -27,7 +27,7 @@ filtercartProducts.map((card) => {
     </a>
     <div class="mt-2 mb-5 flex flex-col items-start gap-4 justify-center">
       <p>
-        <span class="text-3xl font-bold text-slate-900"> $${Math.round(card.price)}</span>
+        <span class="text-3xl font-bold text-slate-900">Total: $${Math.round(card.price)}</span>
        
       </p>
       <div class="flex items-center">
