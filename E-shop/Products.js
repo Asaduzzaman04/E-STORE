@@ -2,7 +2,7 @@ import { addToCard } from "./addToCard";
 
 const product = document.querySelector(".store");
 
-const productUrl = "/Product.json";
+const productUrl = "./public/Product.json";
 
 const products = async () => {
   const res = await fetch(productUrl);

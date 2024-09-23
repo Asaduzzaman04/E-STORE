@@ -1,5 +1,5 @@
 import { GetcardProducts } from "./GetcardProducts";
-import products from "./Product.json"
+import products from "./public/Product.json"
 
 let productCart  = GetcardProducts()
 let filtercartProducts = products.filter((cartEl) => {
@@ -15,7 +15,7 @@ filtercartProducts.map((card) => {
     const divisiton = document.createElement("div")
     cardItem.appendChild(divisiton)
     divisiton.innerHTML = `
-    <div class="relative m-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white  hover:shadow-[inset_0px_20px_20px_10px_#5865F240]  transition-all duration-300 ease-linear hover:scale-105">
+    <div class="relative my-10 mx-5  flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white  hover:shadow-[inset_0px_20px_20px_10px_#5865F240]  transition-all duration-300 ease-linear hover:scale-105">
   <a class="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
     <img class="object-cover" src=${card.image} alt=${card.name} />
     <span class="absolute top-0 left-0 m-2 rounded-full bg-black px-2 text-center text-sm font-medium text-white">${card.category}</span>
