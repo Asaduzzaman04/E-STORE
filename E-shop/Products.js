@@ -2,7 +2,7 @@ import { addToCard } from "./addToCard";
 
 const product = document.querySelector(".store");
 
-const productUrl = "./Product.json";
+const productUrl = "/Product.json";
 
 const products = async () => {
   const res = await fetch(productUrl);
@@ -12,7 +12,7 @@ const products = async () => {
     const section = document.createElement("section");
     section.classList.add(`${element.elid}`)
     product.appendChild(section);
-    section.innerHTML = `<div class='bg-[#f6f8fc] flex flex-col justify-center items-center transition-all duration-300 ease-linear hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] hover:scale-105  gap-5  rounded-lg px-[7%] py-[5%] group '>
+    section.innerHTML = `<div class='hover:rotate-y-180 bg-[#f6f8fc] flex flex-col justify-center items-center transition-all duration-300 ease-linear hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] hover:scale-105  gap-5  rounded-lg px-[7%] py-[5%] group '>
       <section class=" flex flex-col justify-center items-start gap-5">
 
 
@@ -120,7 +120,7 @@ const products = async () => {
   
     card.addEventListener("click", () => {
       if(number === 0){
-        confirm(`Add Quantity of ${element.name}`)
+        confirm(`First Add Quantity of ${element.name}`)
       }else{
         addToCard(element,number)
         
@@ -129,3 +129,33 @@ const products = async () => {
   });
 };
 products();
+
+
+//=====Promotion-section-gsap-animation=====\\
+
+gsap.from(".quote-1",{
+  opacity :0,
+  x:-200,
+  duration: 0.7,
+scrollTrigger :{
+  trigger: ".quote-1",
+  scroller: "body",
+  scrub: 3,
+  start : "top 60%",
+  end: "top 40% "
+}
+
+})
+gsap.from(".quote-2",{
+  opacity :0,
+  y:200,
+  duration: 0.7,
+  scrollTrigger :{
+    trigger: ".quote-2",
+    scroller: "body",
+    scrub: 3,
+    start : "top 90%",
+    end: "top 60% "
+  }
+
+})

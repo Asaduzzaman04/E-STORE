@@ -6,7 +6,6 @@ export const  GetcardProducts = () =>{
         return [];
      }
      cartProducts = JSON.parse(cartProducts)
-     
     
     return cartProducts 
     }

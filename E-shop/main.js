@@ -1,6 +1,10 @@
+import gsap from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger)
+
 // navbar-fixed-section
 const navFix = document.querySelector(".nav-fixed");
-const heroSection = document.querySelector(".hero-section");
+// const heroSection = document.querySelector(".hero-section");
 
 window.addEventListener("scroll", () => {
   const yAxis = navFix.offsetTop;

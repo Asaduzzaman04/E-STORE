@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["*"],
   theme: {
@@ -35,5 +36,5 @@ export default {
       poppins: "poppins, system-ui",
     },
   },
-  plugins: [],
+plugins : []
 };
